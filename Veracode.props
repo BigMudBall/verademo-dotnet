@@ -6,6 +6,7 @@
 			<PropertyGroup>
 				<VeracodeBuildPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory).veracode/veracode-tmp/'))</VeracodeBuildPath>
 				<VeracodeFinalPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory).veracode/build/'))</VeracodeFinalPath>
+				<VeracodeCustomPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory).veracode/custom/'))</VeracodeCustomPath>
 			</PropertyGroup>
 		</When>
 		
@@ -14,6 +15,7 @@
 			<PropertyGroup>
 				<VeracodeBuildPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)/$(VeracodeBuildOutputPath)/veracode-tmp/'))</VeracodeBuildPath>
 				<VeracodeFinalPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)/$(VeracodeBuildOutputPath)/build/'))</VeracodeFinalPath>
+				<VeracodeCustomPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)/$(VeracodeBuildOutputPath)/custom/'))</VeracodeCustomPath>
 			</PropertyGroup>
 		</When>
 		
@@ -22,6 +24,7 @@
 			<PropertyGroup>
 				<VeracodeBuildPath>$(VeracodeBuildOutputPath)/veracode-tmp/</VeracodeBuildPath>
 				<VeracodeFinalPath>$(VeracodeBuildOutputPath)/build/</VeracodeFinalPath>
+				<VeracodeCustomPath>$(VeracodeBuildOutputPath)/custom/</VeracodeCustomPath>
 			</PropertyGroup>
 		</Otherwise>
 	</Choose>
