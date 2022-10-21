@@ -1,9 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verademo-dotnet", "Verademo-dotnet\Verademo-dotnet.csproj", "{5EC81E1A-E87A-41EB-9E04-6A57C8A0739E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Veracode", "Veracode", "{97B7CF3A-F637-4784-B71B-3159C9D4031B}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.targets = Directory.Build.targets
+		veracode-build-microsoft.json = veracode-build-microsoft.json
+		veracode-project.json = veracode-project.json
+		Veracode.Package.build = Veracode.Package.build
+		Veracode.props = Veracode.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +27,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37C6BE8E-6599-48C0-8576-5E3E6A84A105}
 	EndGlobalSection
 EndGlobal

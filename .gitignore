@@ -1,0 +1,6 @@
+.veracode
+.vs
+bin
+obj
+packages
+*.user
